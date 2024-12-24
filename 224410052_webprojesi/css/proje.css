@@ -1,0 +1,120 @@
+
+
+body{
+    font-family: "Roboto Slab", serif;
+    margin:0; /*dört bir yandaki boşluğu ayarlar*/ 
+    background-image:url(arkaplan.jpg);
+    background-size:cover;
+    background-position:unset;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+#logo{
+    font-size: 25px;
+    line-height: 70px; /*???????*/
+    color:chocolate;
+    float:left;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    line-height: 90px;
+    margin-left: 550px;
+}
+
+#menu-button{
+    line-height: 30px;
+    text-decoration: none;
+    color:#ffeead;
+    font-size:100%;
+    background-color:#a96e5b;
+    padding: 12px 24px;
+    border-radius: 40px;
+}
+
+#menu-button:hover{
+    color:#674d3c;
+    background-color: #fff2df;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    color:chocolate;
+    background-color: beige;
+    padding:10px 20px;
+    border-radius: 30px;
+}
+
+nav a:hover{
+    color:chocolate;
+    border-bottom: 2px solid chocolate;
+}
+
+/*en son içerik kısmında kaldım*/
+
+#icerik{
+    background-color: bisque;
+    opacity:0.5;
+    position: absolute; /*top ve left ayarlaması yapar*/
+    top:50%;
+    left:35%;
+    height: 200px;
+    clear:both;
+    font-size:20px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+}
+
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 275px;
+    background-color:beige;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+nav > ul > li:hover > ul{
+    display: block;
+}
+
+nav > a{
+    float: right;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color:#a96e5b;
+}
+
+nav ul ul li{
+    display: block;
+    margin-top:2px;
+}
+
+nav ul ul a{
+    padding: 5px;
+    font-size: 15px;
+}
+nav ul ul a:hover{
+    background-color:#f2b48a;
+}

@@ -1,0 +1,46 @@
+body{
+    background-color: beige;
+}
+.img-set{
+    max-width: 100%;
+}
+
+#sairler{
+    background-color:beige;
+    padding: 50px;
+    font-size: 25px;
+    text-align: center;
+    height:700px;
+}
+
+.card{
+    width:320px;
+    height:395px;
+    border:1px solid #120d04;
+    padding: 0;
+    display: inline-block;
+}
+
+.baslikcard{
+    font-size: 18px;
+    color:rgb(235, 107, 15);
+}
+
+.cardp{
+    color:rgb(162, 106, 66);
+}
+
+.card:hover{
+    border: 2px solid rgb(75, 34, 9);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width:23%;
+    margin:1%;
+}

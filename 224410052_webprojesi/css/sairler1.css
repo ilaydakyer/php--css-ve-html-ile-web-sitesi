@@ -1,0 +1,79 @@
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sairler{
+    text-align: center;
+    font-size: 25px;
+    background-color: beige;
+}
+
+#sairler h3{
+    color:brown;
+    font-size: 35px;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgb(216, 216, 181);
+    overflow: hidden;
+    margin: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+
+.img-set{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.baslikcard{
+    padding:10px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    color:rgb(108, 21, 21);
+}
+
+.cardp{
+    padding: 10px;
+    text-align: justify;
+    margin: 0;
+}
+
+.container > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(max-width:1024px){
+    .card{
+        flex-basis: calc(.33%-20px);
+    }
+}
+
+@media(max-width:768px) {
+    .card{
+        flex-basis: calc(50%-20px);
+    }
+    
+}
+
+@media(max-width:480px){
+    .card{
+        flex-basis: 100%;
+    }
+}
